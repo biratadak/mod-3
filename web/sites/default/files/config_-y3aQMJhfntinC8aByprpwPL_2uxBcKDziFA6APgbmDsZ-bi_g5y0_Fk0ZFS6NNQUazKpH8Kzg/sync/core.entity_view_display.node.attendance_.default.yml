@@ -1,0 +1,50 @@
+uuid: 4d4b643f-dc1e-4822-9a0d-452405f7254f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.attendance_.field_date
+    - field.field.node.attendance_.field_employee_name
+    - field.field.node.attendance_.field_present_1_absent_0_
+    - node.type.attendance_
+  module:
+    - datetime
+    - user
+id: node.attendance_.default
+targetEntityType: node
+bundle: attendance_
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_employee_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_present_1_absent_0_:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 0xE4emSSHTVKb88WL3yN2IahuH23p8VNAXMZNux6BKs
+method: 0
+pattern: "innoraft.com\r\n*.innoraft.com\r\ngmail.com\r\n"
+message: 'You are not allowed to register for this site. Only INNORAFT employees are allowed.'
+actions: null
+form_build_id: form-RDvwJdVPBqT1j3UHX88-il7WzekIJEGYPWvSzEEyHRQ
+form_token: DzdJNv0GOUe5lkNOepfeMC2qywoYLGeAfRcKmJfQkJY
+form_id: domain_registration_admin_form

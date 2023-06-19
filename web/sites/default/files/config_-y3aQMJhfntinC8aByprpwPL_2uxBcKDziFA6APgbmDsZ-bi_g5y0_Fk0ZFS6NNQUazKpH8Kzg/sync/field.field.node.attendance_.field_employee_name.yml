@@ -1,0 +1,33 @@
+uuid: 45041f3f-bfe0-4d33-b6c8-84f9d9aa2649
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_name
+    - node.type.attendance_
+id: node.attendance_.field_employee_name
+field_name: field_employee_name
+entity_type: node
+bundle: attendance_
+label: 'Employee Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: changed
+      direction: DESC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        hr: hr
+        employee: employee
+        administrator: '0'
+    include_anonymous: false
+field_type: entity_reference

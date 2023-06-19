@@ -1,0 +1,17 @@
+uuid: bb18ce85-9c75-44f8-98de-acd7ed6d2b6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Attendance
+type: attendance_
+description: 'Count Attendance of a employee'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

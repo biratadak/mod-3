@@ -1,0 +1,26 @@
+uuid: b02df548-72af-4063-af0c-60d7d8ecb4f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.attendance_.field_date
+    - field.field.node.attendance_.field_employee_name
+    - field.field.node.attendance_.field_present_1_absent_0_
+    - node.type.attendance_
+  module:
+    - user
+id: node.attendance_.teaser
+targetEntityType: node
+bundle: attendance_
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_employee_name: true
+  field_present_1_absent_0_: true

@@ -1,0 +1,89 @@
+uuid: c218c342-d950-420b-8148-5abbe24dc9f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.salary.field_salary_amount
+    - field.field.node.salary.field_salary_date
+    - field.field.node.salary.field_salary_holder
+    - node.type.salary
+  module:
+    - datetime
+    - path
+id: node.salary.default
+targetEntityType: node
+bundle: salary
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_salary_amount:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: '10000'
+    third_party_settings: {  }
+  field_salary_date:
+    type: datetime_datelist
+    weight: 8
+    region: content
+    settings:
+      increment: 15
+      date_order: DMY
+      time_type: none
+    third_party_settings: {  }
+  field_salary_holder:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Name of The Employee'
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Salary of `Employee_Name` for `Month/Year`'
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
