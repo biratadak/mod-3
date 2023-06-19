@@ -1,0 +1,22 @@
+uuid: 92d1215f-e334-4b99-acdd-5fba43d70803
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.salary
+id: node.salary.promote
+field_name: promote
+entity_type: node
+bundle: salary
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

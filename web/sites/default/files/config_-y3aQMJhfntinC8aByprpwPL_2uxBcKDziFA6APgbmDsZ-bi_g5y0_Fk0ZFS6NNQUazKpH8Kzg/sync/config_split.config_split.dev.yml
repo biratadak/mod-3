@@ -1,0 +1,17 @@
+uuid: cb0438db-0a39-467c-a3ed-65a3ad83e4da
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: "- Dev Split ( This will have the following modules & configuration in it )\r\n - Modules\r\n    - Webform UI\r\n - Configuration\r\n    - System Site configuration where the site name is `Innoraft\r\n    Employee Management Portal`"
+weight: 0
+folder: sites/default/files/dev
+module:
+  webform_ui: 0
+theme: {  }
+blacklist:
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

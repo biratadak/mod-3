@@ -1,0 +1,19 @@
+uuid: 255324a3-f278-45f1-8a44-e07c3a76a31b
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: "- Local Split ( This will have the following modules & configuration in it )\r\n- Modules\r\n  - Devel\r\n  - Views UI\r\n  - Webform UI\r\n- Configuration\r\n  - System Site configuration where the site name is `Local\r\nEmployee Management Portal`"
+weight: 0
+folder: sites/default/files/loc
+module:
+  devel: 0
+  views_ui: 0
+  webform_ui: 0
+theme: {  }
+blacklist:
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,23 @@
+uuid: 601766ac-b05d-4126-b6c9-80b719393b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_present_1_absent_0_
+    - node.type.attendance_
+id: node.attendance_.field_present_1_absent_0_
+field_name: field_present_1_absent_0_
+entity_type: node
+bundle: attendance_
+label: Present
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Present
+  off_label: Absent
+field_type: boolean

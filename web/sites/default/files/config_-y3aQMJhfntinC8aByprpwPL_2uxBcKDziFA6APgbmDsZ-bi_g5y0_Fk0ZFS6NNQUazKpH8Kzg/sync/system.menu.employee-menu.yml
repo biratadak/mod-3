@@ -1,0 +1,8 @@
+uuid: ff95b5c0-5df4-4c8b-9f0a-4adacff17508
+langcode: en
+status: true
+dependencies: {  }
+id: employee-menu
+label: 'Employee Menu'
+description: ''
+locked: false

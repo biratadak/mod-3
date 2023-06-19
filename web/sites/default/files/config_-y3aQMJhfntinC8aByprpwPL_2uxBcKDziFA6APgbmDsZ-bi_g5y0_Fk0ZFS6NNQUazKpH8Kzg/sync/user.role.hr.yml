@@ -1,0 +1,17 @@
+uuid: 274a5a5e-b99e-451c-9d51-f5e51e0bec62
+langcode: en
+status: true
+dependencies:
+  module:
+    - toolbar
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer users'
+  - 'select account cancellation method'
+  - 'view user email addresses'

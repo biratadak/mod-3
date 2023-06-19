@@ -1,0 +1,34 @@
+uuid: 483a0dbe-7eb5-41c4-a672-e29a60f34d59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_role
+    - taxonomy.vocabulary.role
+  content:
+    - 'taxonomy_term:role:b3eb9076-1ff8-4a73-99e1-aa1b972642ea'
+  module:
+    - user
+id: user.user.field_role
+field_name: field_role
+entity_type: user
+bundle: user
+label: Role
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: b3eb9076-1ff8-4a73-99e1-aa1b972642ea
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      role: role
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
